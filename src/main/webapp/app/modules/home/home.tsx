@@ -43,7 +43,7 @@ export const Home = () => {
                     <br />
                     Racial discrimination means being treated unfairly because you are:
                   </p>
-                  <ul>
+                  <ul className="custom">
                     <li>White;</li>
                     <li>Black or African American;</li>
                     <li>Asian;</li>
@@ -85,7 +85,7 @@ export const Home = () => {
                     <br />
                     National origin discrimination means being treated unfairly because you:
                   </p>
-                  <ul>
+                  <ul className="custom">
                     <li>are from a specific country or part of the world;</li>
                     <li>speak a certain language or have an accent when you speak;</li>
                     <li>are of a certain ethnic background; or</li>
@@ -102,7 +102,7 @@ export const Home = () => {
                     <br />
                     Familial status discrimination means being treated unfairly because:
                   </p>
-                  <ul>
+                  <ul className="custom">
                     <li>your family includes at least one child under 18 years old;</li>
                     <li>you are pregnant; or</li>
                     <li>you are in the process of adopting a child.</li>
@@ -113,7 +113,7 @@ export const Home = () => {
                     <br />
                     Disability discrimination means being treated unfairly because you:
                   </p>
-                  <ul>
+                  <ul className="custom">
                     <li>have a physical or mental disability which substantially limits any major life activity;</li>
                     <li>have a record of a physical or mental disability; or</li>
                     <li>are viewed as having a physical or mental disability.</li>
@@ -138,23 +138,26 @@ export const Home = () => {
               </div>
             </div>
             <div className="usa-card__container mt-3">
+              <br />
               <header className="usa-card__header">
                 <h3 className="usa-card__heading">What will I need to provide?</h3>
               </header>
+              <br />
+              <header className="usa-card__header">
+                <h5 className="usa-card__heading">Contact information</h5>
+              </header>
               <div className="usa-card__body">
-                <strong>Contact information</strong>
-                <ul className="custome">
+                <ul className="custom">
                   <li>Your name, address, phone number, and email address</li>
                   <li>A second point of contact (optional)</li>
                 </ul>
               </div>
-            </div>
-            <div className="usa-card__container mt-2">
+              <br />
               <header className="usa-card__header">
-                <h3 className="usa-card__heading">Details about what happened</h3>
+                <h5 className="usa-card__heading">Details about what happened</h5>
               </header>
               <div className="usa-card__body">
-                <ul className="custome">
+                <ul className="custom">
                   <li><strong>Why:</strong> Why you were discriminated against</li>
                   <li><strong>Who:</strong> Who discriminated against you</li>
                   <li><strong>Where:</strong> Where the discrimination happened</li>
@@ -164,6 +167,7 @@ export const Home = () => {
               </div>
             </div>
             <div className="usa-card__container mt-2">
+              <br />
               <header className="usa-card__header">
                 <h3 className="usa-card__heading">How long will it take?</h3>
               </header>
