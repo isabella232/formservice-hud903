@@ -2,8 +2,10 @@
 // Import Bootstrap source files from node_modules
 @import 'node_modules/bootstrap/scss/bootstrap';
 body {
-  background: #fafafa;
-  margin: 0;
+  background-color: #f1f1f1;
+  color: color('ink');
+  overflow-x: hidden;
+  display: block;
 }
 
 a {
@@ -313,5 +315,25 @@ http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
 .form-check-input {
   margin-top: -0.5rem;
 }
+.background {
+  background: #ffffff;
+}
+.card {
+  color: #000;
+  background-color: #f2f5f7;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 20px;
+}
 
-/* jhipster-needle-scss-add-main JHipster will add new css style */
+@media (min-width: 64em) {
+  .card {
+    width: 87.5%;
+  }
+}
+@media (max-width: 63.99em) {
+  .card {
+    width: 100%;
+  }
+}
