@@ -1,15 +1,23 @@
 import './footer.scss';
 import React from 'react';
-import { Col, Row } from 'reactstrap';
-
+/* eslint @typescript-eslint/no-var-requires: "off" */
+const faasLogo = require('../../../../content/images/faas-logo.png');
 const Footer = () => (
-  <div className="footer page-content">
-    <Row>
-      <Col md="12">
-        <p>Footer goes here</p>
-      </Col>
-    </Row>
-  </div>
+  <footer className="usa-footer">
+    <div className="usa-footer__secondary-section">
+      <div className="grid-container">
+        <div className="grid-row grid-gap">
+          <div className="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div className="mobile-lg:grid-col-auto">
+              <p className="usa-text-small">Powered by</p>
+            </div>
+            <div className="mobile-lg:grid-col-auto">
+              <img src={faasLogo} role="img" alt="" style={{ marginTop: '-20px' }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 );
-
 export default Footer;
